@@ -7,4 +7,4 @@ Follow the steps below for installing the environment variables:
 2. Copy content from [.env_example](./bootstrap/.env_example) file.
 3. Paste the copied content into the newly created `.env` file.
 4. Replace the placeholder values in the environment file with your own values.
-5. Run ```sh local_setup.sh```.
+5. Run ```source local_setup.sh```.

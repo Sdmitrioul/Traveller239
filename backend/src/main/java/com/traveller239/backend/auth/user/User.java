@@ -26,7 +26,7 @@ public class User implements UserDetails {
     private String firstname;
     private String lastname;
 
-    @Column(name = "telegram_handle", unique = true)
+    @Column(name = "telegram_handle", unique = true, nullable = false)
     private String telegramHandle;
     private String password;
 

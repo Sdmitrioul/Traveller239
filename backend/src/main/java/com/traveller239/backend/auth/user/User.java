@@ -1,6 +1,7 @@
 package com.traveller239.backend.auth.user;
 
 import com.traveller239.backend.auth.token.Token;
+import com.traveller239.backend.travels.Travel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -26,7 +27,7 @@ public class User implements UserDetails {
     private String firstname;
     private String lastname;
 
-    @Column(name = "telegram_handle", unique = true, nullable = false)
+    @Column(name = "telegram_handle", unique = true)
     private String telegramHandle;
     private String password;
 
@@ -35,6 +36,10 @@ public class User implements UserDetails {
 
     @OneToMany(mappedBy = "user")
     private List<Token> tokens;
+
+
+    @OneToMany(mappedBy = "user")
+    private List<Travel> travels;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

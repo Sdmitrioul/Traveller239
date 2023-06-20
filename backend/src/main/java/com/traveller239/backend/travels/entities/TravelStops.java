@@ -1,4 +1,4 @@
-package com.traveller239.backend.travels;
+package com.traveller239.backend.travels.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

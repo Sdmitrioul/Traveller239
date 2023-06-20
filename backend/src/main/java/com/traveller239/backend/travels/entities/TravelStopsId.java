@@ -1,4 +1,4 @@
-package com.traveller239.backend.travels;
+package com.traveller239.backend.travels.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

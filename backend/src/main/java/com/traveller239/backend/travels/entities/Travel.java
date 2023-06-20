@@ -1,4 +1,4 @@
-package com.traveller239.backend.travels;
+package com.traveller239.backend.travels.entities;
 
 import com.traveller239.backend.auth.user.User;
 import jakarta.persistence.*;

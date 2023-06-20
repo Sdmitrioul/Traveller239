@@ -1,7 +1,7 @@
 package com.traveller239.backend.auth.user;
 
 import com.traveller239.backend.auth.token.Token;
-import com.traveller239.backend.travels.Travel;
+import com.traveller239.backend.travels.entities.Travel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

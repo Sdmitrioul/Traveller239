@@ -4,9 +4,12 @@ spring:
     username: ${TRAVELLER_DB_USER}
     password: ${TRAVELLER_DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
+  sql:
+    init:
+      mode: always
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: none
     show-sql: false
     properties:
       hibernate:

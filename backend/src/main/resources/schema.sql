@@ -30,6 +30,7 @@ CREATE TABLE IF NOT EXISTS travels
     small_package BOOLEAN       NOT NULL,
     big_package   BOOLEAN       NOT NULL,
     cost          NUMERIC(5, 2) NOT NULL,
+    currency      VARCHAR(32)   NOT NULL,
     PRIMARY KEY (id),
     constraint fk_travels FOREIGN KEY (user_id) REFERENCES traveller_users (id)
 );

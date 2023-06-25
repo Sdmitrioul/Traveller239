@@ -1,5 +1,6 @@
 package com.traveller239.backend.travels.entities;
 
+import com.traveller239.backend.travels.dto.view.TravelStopView;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -17,8 +18,8 @@ import java.util.Date;
 @IdClass(value = TravelStopsId.class)
 public class TravelStops {
     @Id
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "travel_id", nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "travel_id", referencedColumnName = "id", nullable = false)
     private Travel travel;
 
     @Id
@@ -29,4 +30,8 @@ public class TravelStops {
 
     @Column(nullable = false)
     private String city;
+
+    public TravelStopView generateView() {
+        return TravelStopView.build(this);
+    }
 }

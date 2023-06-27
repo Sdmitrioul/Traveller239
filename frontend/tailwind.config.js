@@ -11,7 +11,6 @@ module.exports = {
       aqua: '#8CDEDC',
       black: "#333333"
     },
-    fontFamily: {},
     extend: {}
   },
   plugins: []

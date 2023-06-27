@@ -1,0 +1,8 @@
+.TravelCard {
+    @apply rounded-lg;
+    @apply border;
+    @apply border-grey;
+    @apply p-2;
+    display: flex;
+    justify-content: space-between;
+}

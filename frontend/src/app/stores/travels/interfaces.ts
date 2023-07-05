@@ -4,22 +4,35 @@ export interface TravelsState {
   batchSize: number
 }
 
+export interface UserDetails {
+  userId: number,
+  name: string,
+  telegramHandle: string
+}
+
 export interface Travel {
   id: number,
-  description: string,
+  description?: string | null,
   documents: boolean,
   smallParcel: boolean,
   bigParcel: boolean,
   cost: number,
   currency: Currency,
-  userId: number,
+  user: UserDetails,
   stops: TravelStop[]
 }
 
-export type Currency = 'EU' | 'RUB' | 'USD'
+export enum CurrencyValue {
+  EU = 'EU',
+  RUB = 'RUB',
+  USD = 'USD'
+}
+
+export type Currency = `${CurrencyValue}`
 
 export interface TravelStop {
   position: number,
   date: string,
-  city: string
+  city: string,
+  country: string
 }

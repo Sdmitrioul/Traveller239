@@ -10,7 +10,8 @@ module.exports = {
       light: '#B2ECE1',
       aqua: '#8CDEDC',
       black: '#333333',
-      grey: '#f2f2f2'
+      grey: '#f2f2f2',
+      current: 'currentColor',
     },
     extend: {}
   },

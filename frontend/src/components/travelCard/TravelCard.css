@@ -3,6 +3,8 @@
     @apply border;
     @apply border-grey;
     @apply p-2;
-    display: flex;
-    justify-content: space-between;
+    @apply mb-2;
+    @apply last:mb-0;
+    display: inline-grid;
+    grid-template-columns: 1fr 2fr;
 }
